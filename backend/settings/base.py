@@ -155,6 +155,8 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
+from backend.aws.conf import *
+
 AWS_GROUP_NAME = "CHECK"
 AWS_USERNAME = "JM"
 AWS_ACCESS_KEY_ID = "AKIA6GBMHAEWNNF3LD5L"

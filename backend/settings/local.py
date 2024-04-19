@@ -155,6 +155,7 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Internationalization
@@ -172,18 +173,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static_my_project", 
     BASE_DIR / "templates" / "build"
     ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn", "static_root")
+STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_root")
 
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
+MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media_root")
 
 from backend.aws.conf import *
 
